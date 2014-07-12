@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>b6db21f0-a150-43d8-9e25-91b5164ab013</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>StarsPlayerEditor</AssemblyName>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="AtlantisSoftware\My\MyApplication.cs" />
+    <Compile Include="AtlantisSoftware\My\MyComputer.cs" />
+    <Compile Include="AtlantisSoftware\My\MyProject.cs" />
+    <Compile Include="AtlantisSoftware\Decryptor.cs" />
+    <Compile Include="AtlantisSoftware\Design.cs" />
+    <Compile Include="AtlantisSoftware\EnemyFleet.cs" />
+    <Compile Include="AtlantisSoftware\Fleet.cs" />
+    <Compile Include="AtlantisSoftware\functions.cs" />
+    <Compile Include="AtlantisSoftware\Minefield.cs" />
+    <Compile Include="AtlantisSoftware\MT.cs" />
+    <Compile Include="AtlantisSoftware\My\Resources\Resources.cs" />
+    <Compile Include="AtlantisSoftware\My\MySettings.cs" />
+    <Compile Include="AtlantisSoftware\Planet.cs" />
+    <Compile Include="AtlantisSoftware\Salvage.cs" />
+    <Compile Include="AtlantisSoftware\Score.cs" />
+    <Compile Include="AtlantisSoftware\Ships.cs" />
+    <Compile Include="AtlantisSoftware\Slot.cs" />
+    <Compile Include="AtlantisSoftware\StarsPlayerEditor.cs" />
+    <Compile Include="AtlantisSoftware\Wormhole.cs" />
+    <EmbeddedResource Include="AtlantisSoftware.Resources.resources" />
+  </ItemGroup>
+</Project>

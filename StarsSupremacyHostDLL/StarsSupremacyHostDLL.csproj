@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>0b5a833f-95a8-4713-a07e-dcc82a6f8233</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>StarsSupremacyHostDLL</AssemblyName>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="StarsSupremacyHostDLL\My\MyApplication.cs" />
+    <Compile Include="StarsSupremacyHostDLL\My\MyComputer.cs" />
+    <Compile Include="StarsSupremacyHostDLL\My\MyProject.cs" />
+    <Compile Include="StarsSupremacyHostDLL\Decryptor.cs" />
+    <Compile Include="StarsSupremacyHostDLL\Design.cs" />
+    <Compile Include="StarsSupremacyHostDLL\DesignSlot.cs" />
+    <Compile Include="StarsSupremacyHostDLL\Functions.cs" />
+    <Compile Include="StarsSupremacyHostDLL\Header.cs" />
+    <Compile Include="StarsSupremacyHostDLL\My\Resources\Resources.cs" />
+    <Compile Include="StarsSupremacyHostDLL\My\MySettings.cs" />
+    <Compile Include="StarsSupremacyHostDLL\Planet.cs" />
+    <Compile Include="StarsSupremacyHostDLL\QueueItem.cs" />
+    <Compile Include="StarsSupremacyHostDLL\Race.cs" />
+    <Compile Include="StarsSupremacyHostDLL\Settings.cs" />
+    <Compile Include="StarsSupremacyHostDLL\StarsSupremacyHostDLL.cs" />
+    <Compile Include="StarsSupremacyHostDLL\XFile.cs" />
+    <EmbeddedResource Include="StarsSupremacyHostDLL.Resources.resources" />
+  </ItemGroup>
+</Project>
