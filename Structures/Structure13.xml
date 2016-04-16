@@ -1,0 +1,81 @@
+<Structure13 description="Planetary Information">
+  <PlanetIDAndOwnerID bytes="2">
+    <PlanetID bits="11"/>
+    <OwnerID bits="5" description="31-nobody"/>
+  </PlanetIDAndOwnerID>
+  <PlanetInfo bytes="2">
+    <Unknown bits="1"/>
+    <Unknown bits="1"/>
+    <Unknown bits="1"/>
+    <Unknown bits="1"/>
+    <Unknown bits="1"/>
+    <Unknown bits="1"/>
+    <Unknown bits="1"/>
+    <Homeworld bits="1"/>
+    <Unknown bits="1"/>
+    <Starbase bits="1"/>
+    <Terraformed bits="1"/>
+    <Installations bits="1"/>
+    <Artefact bits="1"/>
+    <SurfaceMinerals bits="1"/>
+    <RouteTo bits="1"/>
+    <Unknown bits="1"/>
+  </PlanetInfo>
+  <DepletionLength bytes="1">
+    <IroniumDepletionLength bits="2"/>
+    <BoraniumDepletionLength bits="2"/>
+    <GermaniumDepletionLength bits="2"/>
+    <Unused bits="2"/>
+  </DepletionLength>
+  <IroniumDepletion bytes="[DepletionLength/IroniumDepletionLength]"/>
+  <BoraniumDepletion bytes="[DepletionLength/BoraniumDepletionLength]"/>
+  <GermaniumDepletion bytes="[DepletionLength/GermaniumDepletionLength]"/>
+  <IroniumConcentration bytes="1"/>
+  <BoraniumConcentration bytes="1"/>
+  <GermaniumConcentration bytes="1"/>
+  <CurrentGravity bytes="1"/>
+  <CurrentTemperature bytes="1"/>
+  <CurrentRadiation bytes="1"/>
+  <OriginalGravity bytes="[PlanetInfo/Terraformed]"/>
+  <OriginalTemperature bytes="[PlanetInfo/Terraformed]"/>
+  <OriginalRadiation bytes="[PlanetInfo/Terraformed]"/>
+  <Unknown bytes="2">
+    <EstimatedPopIn400Blocks bits="12"/>
+    <Unknown bits="4"/>
+  </Unknown>
+  <SurfaceLength bytes="1">
+    <SurfaceIroniumLength bits="2"/>
+    <SurfaceBoraniumLength bits="2"/>
+    <SurfaceGermaniumLength bits="2"/>
+    <SurfacePopulationLength bits="2"/>
+  </SurfaceLength>
+  <SurfaceIronium bytes="[SurfaceLength/SurfaceIroniumLength]"/>
+  <SurfaceBoranium bytes="[SurfaceLength/SurfaceBoraniumLength]"/>
+  <SurfaceGermanium bytes="[SurfaceLength/SurfaceGermaniumLength]"/>
+  <SurfacePopulation bytes="[SurfaceLength/SurfacePopulationLength]"/>
+  <ExcessPopulation bytes="[PlanetInfo/Installations]"/>
+  <Installations bytes="[PlanetInfo/Installations]*3">
+    <Mines bits="12"/>
+    <Factories bits="12"/>
+  </Installations>
+  <Unknown bytes="[PlanetInfo/Installations]*2">
+    <Defenses bits="12"/>
+    <Unknown bits="4"/>
+  </Unknown>
+  <Unknown bytes="[PlanetInfo/Installations]">
+    <NoScanner bits="1"/>
+    <Unknown bits="6"/>
+    <ContributeOnlyLeftOverresources bits="1"/>
+  </Unknown>
+  <Unknown bytes="[PlanetInfo/Installations]"/>
+  <StarbaseSlotIDAndDamage bytes="[PlanetInfo/Starbase]*2">
+    <StarbaseSlotID bits="4"/>
+    <Damage bits="9"/>
+    <Unknown bits="3"/>
+  </StarbaseSlotIDAndDamage>
+  <MDTargetAndSpeed bytes="[PlanetInfo/Starbase]*2">
+    <MDTargetPlanetNo bits="10"/>
+    <MDSpeedMinus4 bits="6"/>
+  </MDTargetAndSpeed>
+  <RouteToPlanetNo bytes="[PlanetInfo/RouteTo]*2"/>
+</Structure13>

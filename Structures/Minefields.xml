@@ -1,0 +1,19 @@
+<Structure BlockID="43" Title="Minefields" MinID="0" MaxID="8191" BlockCounter="1">
+<ID Bytes="2" Type="System.UInt16">
+  <MinefieldID Bits="9"/>
+  <PlayerID Bits="4"/>
+  <TypeID Bits="3"/>
+</ID>
+<XPos Bytes="2" Type="System.UInt16" />
+<YPos Bytes="2" Type="System.UInt16" />
+<MineCount Bytes="4" Type="System.UInt32" />
+<Unknown1 Bytes="2" Type="System.UInt16" />
+<Unknown2 Bytes="2" Type="System.UInt16">
+  <Type Bits="2"/>
+  <Unknown2x1 Bits="6"/>
+  <ExplodingMinefield Bits="1"/>
+  <Unknown2x2 Bits="7"/>
+</Unknown2>
+<Unknown3 Bytes="2" Type="System.UInt16" />
+<TurnNo Bytes="2" Type="System.UInt16"/>
+</Structure>

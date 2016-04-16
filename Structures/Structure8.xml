@@ -1,0 +1,23 @@
+<Structure8 Description="Header Info">
+  <Magic bytes="4" type="text" description="J3J3"/>
+  <GameID bytes="4"/>
+  <Version bytes="2">
+    <Increment bits="5" Description="v0.0.x"/>
+    <Minor bits="7" Description="v0.x.0"/>
+    <Major bits="4" Description="vx.0.0"/>
+  </Version>
+  <TurnNo bytes="2"/>
+  <PlayerIDAndEncryptionSalt bytes="2">
+    <PlayerID bits="5"/>
+    <EncryptionSalt bits="11"/>
+  </PlayerIDAndEncryptionSalt>
+  <FileType bytes="1" lookup="XY File,X File,HST Fileile,M File,History File,Race File"/>
+  <Flags bytes="1">
+    <TurnSubmitted bits="1"/>
+    <HostUsingFile bits="1"/>
+    <MultipleTurns bits="1"/>
+    <GameOver bits="1"/>
+    <SharewareVersion bits="1"/>
+    <Unused bits="3"/>
+  </Flags>
+</Structure8>

@@ -1,0 +1,10 @@
+<Structure20 Description="Waypoint Info">
+  <X bytes="2"/>
+  <Y bytes="2"/>
+  <ObjectID bytes="2"/>
+  <Unknown bytes="1">
+    <Unknown bits="4"/>
+    <WarpSpeed bits="4"/>
+  </Unknown>
+  <Unknown bytes="1"/>
+</Structure20>

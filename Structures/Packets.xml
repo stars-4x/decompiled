@@ -1,0 +1,20 @@
+<Structure BlockID="43" Title="Mineral Packets And Salvage" MinID="8192" MaxID="16383" BlockCounter="1" Comment="Planet IT of 1023 (3FFh) denotes Salvage">
+<ID Bytes="2" Type="System.UInt16">
+  <SalvageID Bits="9"/>
+  <OwnerID Bits="4"/>
+  <TypeID Bits="3"/>
+</ID>
+<XPos Bytes="2" Type="System.UInt16" />
+<YPos Bytes="2" Type="System.UInt16" />
+<TargetAndSpeed Bytes="2" Type="System.UInt16">
+  <PlanetID Bits="10"/>
+  <WarpSpeedMinus4 Bits="4"/>
+  <WarpOverMDLimit Bits="2"/>
+</TargetAndSpeed>
+<Ironium Bytes="2" Type="System.UInt16" />
+<Boranium Bytes="2" Type="System.UInt16" />
+<Germanium Bytes="2" Type="System.UInt16" />
+<Unknown1 Bytes="1" Type="System.UInt16" />
+<Unknown2 Bytes="1" Type="System.UInt16" />
+<TurnNoLastChange Bytes="2" Type="System.UInt16"/>
+</Structure>

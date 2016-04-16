@@ -1,0 +1,10 @@
+<Structure19 Description="Waypoint Info">
+  <X bytes="2"/>
+  <Y bytes="2"/>
+  <ObjectID bytes="2"/>
+  <Unknown bytes="1">
+    <Task bits="4" lookup="(no task here),Transport,Colonize,Remote Mining,Merge with Fleet,Scrap Fleet,Lay Minefield,Patrol,Rout,Transfer Fleet,?,??,???"/>
+    <Unknown bits="4"/>
+  </Unknown>
+  <Unknown bytes="1"/>
+</Structure19>

@@ -1,0 +1,52 @@
+<Structure17 Description="Partial Fleet Details">
+  <FleetAndOwnerIDs bytes="2">
+    <FleetID bits="9"/>
+    <OwnerID bits="4"/>
+    <Unknown bits="3"/>
+  </FleetAndOwnerIDs>
+  <Unknown bytes="1"/>
+  <Unknown bytes="1"/>
+  <Unknown bytes="1"/>
+  <Unknown bytes="1">
+    <Unknown Bits="3"/>
+    <ShipCountLengthsAre1InsteadOf2 bits="1"/>
+    <Unknown bits="4"/>
+  </Unknown>
+  <PositionObjectID bytes="2"/>
+  <X bytes="2"/>
+  <Y bytes="2"/>
+  <ShipTypeBitmap bytes="2">
+    <Slot0 bits="1"/>
+    <Slot1 bits="1"/>
+    <Slot2 bits="1"/>
+    <Slot3 bits="1"/>
+    <Slot4 bits="1"/>
+    <Slot5 bits="1"/>
+    <Slot6 bits="1"/>
+    <Slot7 bits="1"/>
+    <Slot8 bits="1"/>
+    <Slot9 bits="1"/>
+    <Slot10 bits="1"/>
+    <Slot11 bits="1"/>
+    <Slot12 bits="1"/>
+    <Slot13 bits="1"/>
+    <Slot14 bits="1"/>
+    <Slot15 bits="1"/>
+  </ShipTypeBitmap>
+  <Slot0ShipCount bytes="[ShipTypeBitmap/Slot0]*(2-[Unknown/ShipCountLengthsAre1InsteadOf2])"/>
+  <Slot1ShipCount bytes="[ShipTypeBitmap/Slot1]*(2-[Unknown/ShipCountLengthsAre1InsteadOf2])"/>
+  <Slot2ShipCount bytes="[ShipTypeBitmap/Slot2]*(2-[Unknown/ShipCountLengthsAre1InsteadOf2])"/>
+  <Slot3ShipCount bytes="[ShipTypeBitmap/Slot3]*(2-[Unknown/ShipCountLengthsAre1InsteadOf2])"/>
+  <Slot4ShipCount bytes="[ShipTypeBitmap/Slot4]*(2-[Unknown/ShipCountLengthsAre1InsteadOf2])"/>
+  <Slot5ShipCount bytes="[ShipTypeBitmap/Slot5]*(2-[Unknown/ShipCountLengthsAre1InsteadOf2])"/>
+  <Slot6ShipCount bytes="[ShipTypeBitmap/Slot6]*(2-[Unknown/ShipCountLengthsAre1InsteadOf2])"/>
+  <Slot7ShipCount bytes="[ShipTypeBitmap/Slot7]*(2-[Unknown/ShipCountLengthsAre1InsteadOf2])"/>
+  <Slot8ShipCount bytes="[ShipTypeBitmap/Slot8]*(2-[Unknown/ShipCountLengthsAre1InsteadOf2])"/>
+  <Slot9ShipCount bytes="[ShipTypeBitmap/Slot9]*(2-[Unknown/ShipCountLengthsAre1InsteadOf2])"/>
+  <Slot10ShipCount bytes="[ShipTypeBitmap/Slot10]*(2-[Unknown/ShipCountLengthsAre1InsteadOf2])"/>
+  <Slot11ShipCount bytes="[ShipTypeBitmap/Slot11]*(2-[Unknown/ShipCountLengthsAre1InsteadOf2])"/>
+  <Slot12ShipCount bytes="[ShipTypeBitmap/Slot12]*(2-[Unknown/ShipCountLengthsAre1InsteadOf2])"/>
+  <Slot13ShipCount bytes="[ShipTypeBitmap/Slot13]*(2-[Unknown/ShipCountLengthsAre1InsteadOf2])"/>
+  <Slot14ShipCount bytes="[ShipTypeBitmap/Slot14]*(2-[Unknown/ShipCountLengthsAre1InsteadOf2])"/>
+  <Slot15ShipCount bytes="[ShipTypeBitmap/Slot15]*(2-[Unknown/ShipCountLengthsAre1InsteadOf2])"/>
+</Structure17>

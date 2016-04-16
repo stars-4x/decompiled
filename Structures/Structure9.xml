@@ -1,0 +1,18 @@
+<Structure9 Description="X file info">
+  <LengthOfFollowingBlocksExcludingBlock0 bytes="2"/>
+  <Unknown bytes="1" Description="Machine and Serial no hashes"/>
+  <Unknown bytes="1" Description="Machine and Serial no hashes"/>
+  <Unknown bytes="1" Description="Possibly 2 4bit lengths for following bytes, ie 7 and 5"/>
+  <Unknown bytes="1" Description="Machine and Serial no hashes"/>
+  <Unknown bytes="1" Description="Machine and Serial no hashes"/>
+  <Unknown bytes="1" Description="Machine and Serial no hashes"/>
+  <Unknown bytes="1" Description="Machine and Serial no hashes"/>
+  <Unknown bytes="1" Description="Machine and Serial no hashes"/>
+  <Unknown bytes="1" Description="Machine and Serial no hashes"/>
+  <Unknown bytes="1" Description="Machine and Serial no hashes"/>
+  <Unknown bytes="1" Description="Machine and Serial no hashes"/>
+  <Unknown bytes="1" Description="Machine and Serial no hashes"/>
+  <Unknown bytes="1" Description="Machine and Serial no hashes"/>
+  <Unknown bytes="1" Description="Machine and Serial no hashes"/>
+  <Unknown bytes="1" Description="Machine and Serial no hashes"/>
+</Structure9>

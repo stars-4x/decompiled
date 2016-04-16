@@ -1,0 +1,8 @@
+<Structure29 Description="Production Queue (x file)">
+  <PlanetID bytes="2"/>
+  <QueueItem bytes="4" repeat="({Bytes}-2)/4">
+    <Count bits="10"/>
+    <Item bits="10"/>
+    <Completion bits="12"/>
+  </QueueItem>
+</Structure29>

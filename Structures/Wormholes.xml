@@ -1,0 +1,48 @@
+<Structure BlockID="43" Title="Wormholes" MinID="16384" MaxID="20479" BlockCounter="1">
+<ID Bytes="2">
+  <WormholeID Bits="12" Type="System.UInt16"/>
+  <TypeID Bits="4"/>
+</ID>
+<XPos Bytes="2" Type="System.UInt16" />
+<YPos Bytes="2" Type="System.UInt16" />
+<Stability Bytes="2" Type="System.UInt16" />
+<BeenThrough Bytes="2" Type="System.UInt16">
+  <ThroughP1 Bits="1" Type="System.Boolean"/>
+  <ThroughP2 Bits="1" Type="System.Boolean"/>
+  <ThroughP3 Bits="1" Type="System.Boolean"/>
+  <ThroughP4 Bits="1" Type="System.Boolean"/>
+  <ThroughP5 Bits="1" Type="System.Boolean"/>
+  <ThroughP6 Bits="1" Type="System.Boolean"/>
+  <ThroughP7 Bits="1" Type="System.Boolean"/>
+  <ThroughP8 Bits="1" Type="System.Boolean"/>
+  <ThroughP9 Bits="1" Type="System.Boolean"/>
+  <ThroughP10 Bits="1" Type="System.Boolean"/>
+  <ThroughP11 Bits="1" Type="System.Boolean"/>
+  <ThroughP12 Bits="1" Type="System.Boolean"/>
+  <ThroughP13 Bits="1" Type="System.Boolean"/>
+  <ThroughP14 Bits="1" Type="System.Boolean"/>
+  <ThroughP15 Bits="1" Type="System.Boolean"/>
+  <ThroughP16 Bits="1" Type="System.Boolean"/>
+</BeenThrough>
+<CanSeeIt Bytes="2" Type="System.UInt16">
+  <SeeP1 Bits="1" Type="System.Boolean"/>
+  <SeeP2 Bits="1" Type="System.Boolean"/>
+  <SeeP3 Bits="1" Type="System.Boolean"/>
+  <SeeP4 Bits="1" Type="System.Boolean"/>
+  <SeeP5 Bits="1" Type="System.Boolean"/>
+  <SeeP6 Bits="1" Type="System.Boolean"/>
+  <SeeP7 Bits="1" Type="System.Boolean"/>
+  <SeeP8 Bits="1" Type="System.Boolean"/>
+  <SeeP9 Bits="1" Type="System.Boolean"/>
+  <SeeP10 Bits="1" Type="System.Boolean"/>
+  <SeeP11 Bits="1" Type="System.Boolean"/>
+  <SeeP12 Bits="1" Type="System.Boolean"/>
+  <SeeP13 Bits="1" Type="System.Boolean"/>
+  <SeeP14 Bits="1" Type="System.Boolean"/>
+  <SeeP15 Bits="1" Type="System.Boolean"/>
+  <SeeP16 Bits="1" Type="System.Boolean"/>
+</CanSeeIt>
+<TargetID Bytes="2" Type="System.UInt16" />
+<Unknown5 Bytes="2" Type="System.UInt16" />
+<TurnNo Bytes="2" Type="System.UInt16"/>
+</Structure>

@@ -1,0 +1,121 @@
+<Structure6 Description="Race Details">
+  <PlayerID bytes="1"/>
+  <ShipSlotsUsed bytes="1"/>
+  <PlanetCount bytes="2"/>
+  <FleetAndStarBaseDesignCount bytes="2">
+    <FleetCount bits="12"/>
+    <StarBaseDesignCount bits="4"/>
+  </FleetAndStarBaseDesignCount>
+  <Unknown bytes="1">
+    <Unknown bits="2" comment="Appears to require being set to 3"/>
+    <FullRace bits="1" comment="Appears to starts skipping at Homeworld and restarts at NameLength if 0"/>
+    <Logo bits="5"/>
+  </Unknown>
+  <Unknown bytes="1" comment="Appears to require being set to 1"/>
+  <Homeworld bytes="2*[Unknown/FullRace]"/>
+  <Rank bytes="2*[Unknown/FullRace]"/>
+  <PasswordHash bytes="4*[Unknown/FullRace]"/>
+  <CentreGravity bytes="[Unknown/FullRace]"/>
+  <CentreTemperature bytes="[Unknown/FullRace]"/>
+  <CentreRadiation bytes="[Unknown/FullRace]"/>
+  <LowGravity bytes="[Unknown/FullRace]"/>
+  <LowTemperature bytes="[Unknown/FullRace]"/>
+  <LowRadiation bytes="[Unknown/FullRace]"/>
+  <HighGravity bytes="[Unknown/FullRace]"/>
+  <HighTemperature bytes="[Unknown/FullRace]"/>
+  <HighRadiation bytes="[Unknown/FullRace]"/>
+  <GrowthRate bytes="[Unknown/FullRace]"/>
+  <EnergyLevel bytes="[Unknown/FullRace]"/>
+  <WeaponsLevel bytes="[Unknown/FullRace]"/>
+  <PropulsionLevel bytes="[Unknown/FullRace]"/>
+  <ConstructionLevel bytes="[Unknown/FullRace]"/>
+  <ElectronicsLevel bytes="[Unknown/FullRace]"/>
+  <BiologyLevel bytes="[Unknown/FullRace]"/>
+  <EnergyLevelPointsSincePrevLevel bytes="4*[Unknown/FullRace]"/>
+  <WeaponsLevelPointsSincePrevLevel bytes="4*[Unknown/FullRace]"/>
+  <PropulsionLevelPointsSincePrevLevel bytes="4*[Unknown/FullRace]"/>
+  <ConstructionLevelPointsSincePrevLevel bytes="4*[Unknown/FullRace]"/>
+  <ElectronicsLevelPointsSincePrevLevel bytes="4*[Unknown/FullRace]"/>
+  <BiologyLevelPointsSincePrevLevel bytes="4*[Unknown/FullRace]"/>
+  <ResearchPercentage bytes="[Unknown/FullRace]"/>
+  <ResearchPriorities bytes="[Unknown/FullRace]">
+    <CurrentResearchPriority bits="4"/>
+    <NextResearchPriority bits="4"/>
+  </ResearchPriorities>
+  <ResearchPointsPreviousYear bytes="4*[Unknown/FullRace]"/>
+  <PopulationEfficiency bytes="[Unknown/FullRace]"/>
+  <FactoryEfficiency bytes="[Unknown/FullRace]"/>
+  <ResourcesToBuildFactories bytes="[Unknown/FullRace]"/>
+  <FactoriesOperated bytes="[Unknown/FullRace]"/>
+  <MiningEfficiency bytes="[Unknown/FullRace]"/>
+  <ResourcesToBuildMines bytes="[Unknown/FullRace]"/>
+  <MinesOperated bytes="[Unknown/FullRace]"/>
+  <SpendLeftOverPointsOn bytes="[Unknown/FullRace]"/>
+  <EnergyResearchCost bytes="[Unknown/FullRace]"/>
+  <WeaponsResearchCost bytes="[Unknown/FullRace]"/>
+  <PropulsionResearchCost bytes="[Unknown/FullRace]"/>
+  <ConstructionResearchCost bytes="[Unknown/FullRace]"/>
+  <ElectronicsResearchCost bytes="[Unknown/FullRace]"/>
+  <BiologyResearchCost bytes="[Unknown/FullRace]"/>
+  <PRT bytes="[Unknown/FullRace]"/>
+  <Unknown bytes="[Unknown/FullRace]" comment="Probably unused"/>
+  <SRT bytes="2*[Unknown/FullRace]">
+    <ImprovedfuelEfficiency bits="1"/>
+    <TotalTerraforming bits="1"/>
+    <AdvancedremoteMining bits="1"/>
+    <ImprovedStarbases bits="1"/>
+    <Generalisedresearch bits="1"/>
+    <UltimateRecycling bits="1"/>
+    <MineralAlchemy bits="1"/>
+    <NoRamScoopengines bits="1"/>
+    <CheapEngines bits="1"/>
+    <OnlyBasicRemoteMining bits="1"/>
+    <NoAdvancedScanners bits="1"/>
+    <LowstartingPopulation bits="1"/>
+    <BleedingedgeTechnology bits="1"/>
+    <RegeneratingShields bits="1"/>
+    <Unused bits="2"/>
+  </SRT>
+  <Unknown bytes="[Unknown/FullRace]"/>
+  <Unknown bytes="[Unknown/FullRace]">
+    <Unknown bits="5"/>
+    <ExpensiveTechstartsAt3 bits="1"/>
+    <Unknown bits="1"/>
+    <FactoriesCost1LessGerm bits="1"/>
+  </Unknown>
+  <MTItems bytes="2*[Unknown/FullRace]">
+    <MultiCargoPod bits="1"/>
+    <MultiFunctionPod bits="1"/>
+    <LangstonShell bits="1"/>
+    <MegaPolyShell bits="1"/>
+    <AlienMiner bits="1"/>
+    <HushABoom bits="1"/>
+    <AntiMatterTorpedo bits="1"/>
+    <MultiContainedMunition bits="1"/>
+    <MiniMorph bits="1"/>
+    <EnigmaPulsar bits="1"/>
+    <GenesisDevice bits="1"/>
+    <Jumpgate bits="1"/>
+    <Unused bits="4"/>
+  </MTItems>
+  <Unknown bytes="2*[Unknown/FullRace]"/>
+  <Unknown bytes="2*[Unknown/FullRace]"/>
+  <Unknown bytes="2*[Unknown/FullRace]"/>
+  <Unknown bytes="2*[Unknown/FullRace]"/>
+  <Unknown bytes="2*[Unknown/FullRace]"/>
+  <Unknown bytes="2*[Unknown/FullRace]"/>
+  <Unknown bytes="2*[Unknown/FullRace]"/>
+  <Unknown bytes="2*[Unknown/FullRace]"/>
+  <Unknown bytes="2*[Unknown/FullRace]"/>
+  <Unknown bytes="2*[Unknown/FullRace]"/>
+  <Unknown bytes="2*[Unknown/FullRace]"/>
+  <Unknown bytes="2*[Unknown/FullRace]"/>
+  <Unknown bytes="2*[Unknown/FullRace]"/>
+  <Unknown bytes="2*[Unknown/FullRace]"/>
+  <PlayerRelationCount bytes="[Unknown/FullRace]"/>
+  <PlayerRelation bytes="[Unknown/FullRace]" repeat="[PlayerRelationCount]"/>
+  <NameLength bytes="1"/>
+  <Name bytes="[NameLength]" type="StarsText"/>
+  <PluralNameLength bytes="1"/>
+  <PluralName bytes="[PluralNameLength]" type="StarsText"/>
+</Structure6>

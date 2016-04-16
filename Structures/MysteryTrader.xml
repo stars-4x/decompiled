@@ -1,0 +1,49 @@
+<Structure BlockID="43" Title="Mystery Traders" MinID="24576" MaxID="28671" BlockCounter="1">
+<ID Bytes="2" Type="System.UInt16">
+  <MTID Bits="12"/>
+  <Type Bits="4"/>
+</ID>
+<XPos Bytes="2" Type="System.UInt16" />
+<YPos Bytes="2" Type="System.UInt16" />
+<XDest Bytes="2" Type="System.UInt16" />
+<YDest Bytes="2" Type="System.UInt16" />
+<SpeedBytes Bytes="2">
+  <Speed Bits="4"/>
+  <Unknown1 Bits="12"/>
+</SpeedBytes>
+<MetMT Bytes="2" Type="System.UInt16">
+  <P1 Bits="1" Type="System.Boolean"/>
+  <P2 Bits="1" Type="System.Boolean"/>
+  <P3 Bits="1" Type="System.Boolean"/>
+  <P4 Bits="1" Type="System.Boolean"/>
+  <P5 Bits="1" Type="System.Boolean"/>
+  <P6 Bits="1" Type="System.Boolean"/>
+  <P7 Bits="1" Type="System.Boolean"/>
+  <P8 Bits="1" Type="System.Boolean"/>
+  <P9 Bits="1" Type="System.Boolean"/>
+  <P10 Bits="1" Type="System.Boolean"/>
+  <P11 Bits="1" Type="System.Boolean"/>
+  <P12 Bits="1" Type="System.Boolean"/>
+  <P13 Bits="1" Type="System.Boolean"/>
+  <P14 Bits="1" Type="System.Boolean"/>
+  <P15 Bits="1" Type="System.Boolean"/>
+  <P16 Bits="1" Type="System.Boolean"/>
+</MetMT>
+<Items Bytes="2" Type="System.UInt16">
+  <MCP Bits="1" Type="System.Boolean"/>
+  <MFP Bits="1" Type="System.Boolean"/>
+  <LS Bits="1" Type="System.Boolean"/>
+  <MPS Bits="1" Type="System.Boolean"/>
+  <AM Bits="1" Type="System.Boolean"/>
+  <HaB Bits="1" Type="System.Boolean"/>
+  <AMT Bits="1" Type="System.Boolean"/>
+  <MCM Bits="1" Type="System.Boolean"/>
+  <MM Bits="1" Type="System.Boolean"/>
+  <EP Bits="1" Type="System.Boolean"/>
+  <GD Bits="1" Type="System.Boolean"/>
+  <JG Bits="1" Type="System.Boolean"/>
+  <Ship Bits="1" Type="System.Boolean"/>
+  <Unused Display="0" Bits="3" Type="System.UInt16"/>
+</Items>
+<TurnNo Bytes="2" Type="System.UInt16"/>
+</Structure>

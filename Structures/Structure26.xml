@@ -1,0 +1,26 @@
+<Structure26 Description="Ship/Starbase Design Data">
+  <Unknown bytes="2">
+    <Unknown bits="2"/>
+    <FullDesign bits="1"/>
+    <Unknown bits="7"/>
+    <DesignID bits="5"/>
+    <Unknown bits="1"/>
+  </Unknown>
+  <ShipHullID bytes="1"/>
+  <Unknown bytes="1"/>
+  <Mass bytes="(1-[Unknown/FullDesign])*2" Description="Only on unknown designs"/>
+  <Armour bytes="[Unknown/FullDesign]*2"/>
+  <SlotCount bytes="[Unknown/FullDesign]"/>
+  <Unknown bytes="[Unknown/FullDesign]*2"/>
+  <TotalBuilt bytes="[Unknown/FullDesign]*2"/>
+  <Unknown bytes="[Unknown/FullDesign]*2"/>
+  <TotalRemaining bytes="[Unknown/FullDesign]*2"/>
+  <Unknown bytes="[Unknown/FullDesign]*2"/>
+  <ShipSlot bytes="[Unknown/FullDesign]*4" repeat="[SlotCount]">
+    <ItemCategory bits="16"/>
+    <ItemID bits="8"/>
+    <ItemCount bits="8"/>
+  </ShipSlot>
+  <NameLength bytes="1"/>
+  <Name bytes="[NameLength]" type="StarsText"/>
+</Structure26>

@@ -1,0 +1,14 @@
+<Structure30 Description="Battle Orders">
+  <RaceIDAndBattlePlanID bytes="1">
+    <RaceID bits="4"/>
+    <BattlePlanID bits="4"/>
+  </RaceIDAndBattlePlanID>
+  <Tactic bytes="1"/>
+  <Target bytes="1">
+    <PrimaryTarget bits="4"/>
+    <SecondaryTarget bits="4"/>
+  </Target>
+  <AttackWho bytes="1" lookup="Nobody,Enemies,Neutrals &amp; Enemies,Everyone,RaceID0,RaceID1,RaceID2,RaceID3,RaceID4,RaceID5,RaceID6,RaceID7,RaceID8,RaceID9,RaceID10,RaceID11,RaceID12,RaceID13,RaceID14,RaceID15"/>
+  <NameLength bytes="1"/>
+  <Name bytes="[NameLength]" type="StarsText"/>
+</Structure30>

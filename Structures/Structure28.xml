@@ -1,0 +1,7 @@
+<Structure28 Description="Production Queue">
+  <QueueItem bytes="4" repeat="{bytes}/4">
+    <Count bits="10"/>
+    <Item bits="10"/>
+    <Completion bits="12"/>
+  </QueueItem>
+</Structure28>

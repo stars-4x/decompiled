@@ -1,0 +1,23 @@
+<Structure45 Description="Scores">
+  <PlayerIDAndVictoryConditions bytes="2">
+    <PlayerID bits="4"/>
+    <Unknown bits="2"/>
+    <OwnsXPlanets bits="1"/>
+    <AttainsTechXInYFields bits="1"/>
+    <ExceedsAScoreOf bits="1"/>
+    <ExceedsSecondPlaceScoreByX bits="1"/>
+    <HasProductionCapacityOfX bits="1"/>
+    <OwnsXCapitalShips bits="1"/>
+    <HasTheHighestScoreAfterXYears bits="1"/>
+    <Unknown bits="3"/>
+  </PlayerIDAndVictoryConditions>
+  <Rank bytes="2"/>
+  <Score bytes="4"/>
+  <Resources bytes="4"/>
+  <Planets bytes="2"/>
+  <Starbases bytes="2"/>
+  <UnarmedShips bytes="2"/>
+  <Escortships bytes="2"/>
+  <CapitalShips bytes="2"/>
+  <TechLevels bytes="2"/>
+</Structure45>
